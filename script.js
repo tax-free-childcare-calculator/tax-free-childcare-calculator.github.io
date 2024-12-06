@@ -1,20 +1,20 @@
-// script.js
-document.getElementById('total-payable').addEventListener('input', function () {
-  const totalPayable = parseFloat(this.value);
+function calculate() {
+  // Get user input
+  const totalAmount = parseFloat(document.getElementById("totalAmount").value);
 
-  if (!isNaN(totalPayable)) {
-    // Set the predefined values based on logic
-    const amountToPay = totalPayable * 0.8; // 80% of the total payable
-    const governmentAddition = totalPayable * 0.2; // 20% of the total payable
-
-    // Populate the remaining fields
-    document.getElementById('government-contribution').value = '0.00'; // Always starts as zero
-    document.getElementById('amount-to-pay').value = amountToPay.toFixed(2);
-    document.getElementById('government-addition').value = governmentAddition.toFixed(2);
-  } else {
-    // Clear the fields if the input is invalid
-    document.getElementById('government-contribution').value = '';
-    document.getElementById('amount-to-pay').value = '';
-    document.getElementById('government-addition').value = '';
+  // Validate input
+  if (isNaN(totalAmount) || totalAmount <= 0) {
+    alert("Please enter a valid total amount.");
+    return;
   }
-});
+
+  // Perform calculations
+  const govContribution = 0; // Predefined
+  const govAddedAmount = totalAmount * 0.2; // 20% of total amount
+  const amountToPay = totalAmount - govAddedAmount; // Remaining 80%
+
+  // Display results
+  document.getElementById("govContribution").value = govContribution.toFixed(2);
+  document.getElementById("amountToPay").value = amountToPay.toFixed(2);
+  document.getElementById("govAddedAmount").value = govAddedAmount.toFixed(2);
+}
