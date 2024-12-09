@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eligibility Criteria for Tax-Free Childcare in the UK</title>
+    <style>
+        /* General Styles */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f7f9fc;
+            color: #333;
+        }
+
+        /* Header */
+        header {
+            background-color: #005ea5;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: 2rem;
+            margin: 0;
+        }
+
+        /* Main Content */
+        main {
+            padding: 20px;
+        }
+
+        main h2 {
+            color: #005ea5;
+        }
+
+        main p {
+            line-height: 1.6;
+        }
+
+        /* Link Styling */
+        a {
+            color: #005ea5;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        /* Highlight Box */
+        .highlight {
+            background-color: white;
+            padding: 15px;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+        }
+
+        .highlight ul {
+            padding-left: 20px;
+        }
+
+        .highlight li {
+            margin-bottom: 10px;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #005ea5;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <h1>Eligibility Criteria for Tax-Free Childcare</h1>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <h2>Eligibility Criteria</h2>
+        <div class="highlight">
+            <h3>Parents or Guardians</h3>
+            <ul>
+                <li>You must earn at least £152 per week (on average). This is equivalent to 16 hours per week at the National Minimum or Living Wage.</li>
+                <li>If you are in a couple, both partners must meet the minimum earnings threshold unless one of you is unable to work due to reasons such as disability or parental leave.</li>
+                <li>Each partner must not earn more than £100,000 per year.</li>
+            </ul>
+        </div>
+
+        <div class="highlight">
+            <h3>Eligible Children</h3>
+            <ul>
+                <li>The child must be under 12 years old. If the child has a disability, they must be under 17 years old.</li>
+                <li>The childcare provider must be registered with the scheme and approved by the government.</li>
+            </ul>
+        </div>
+
+        <h2>Exceptions and Special Cases</h2>
+        <p>There are exceptions for certain situations:</p>
+        <ul>
+            <li>If one parent is unable to work due to disability or severe health conditions, they may still qualify.</li>
+            <li>Families on certain benefits, such as Universal Credit or Jobseeker’s Allowance, are not eligible for Tax-Free Childcare but may receive other childcare support.</li>
+        </ul>
+
+        <h2>How to Check Eligibility</h2>
+        <p>You can check your eligibility and apply for Tax-Free Childcare through the <a href="https://www.gov.uk/tax-free-childcare?step-by-step-nav=d78aeaf6-1747-4d72-9619-f16efb4dd89d" target="_blank">official GOV.UK website</a>. The application process is straightforward and includes identity verification and proof of income.</p>
+
+        <h2>Why is Meeting Eligibility Important?</h2>
+        <p>Ensuring you meet the eligibility criteria is essential to receive the maximum benefits. Tax-Free Childcare can significantly reduce your childcare expenses, allowing you to focus on work or other priorities without financial strain.</p>
+    </main>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2024 Childcare Support UK. All Rights Reserved. | <a href="https://www.gov.uk/tax-free-childcare?step-by-step-nav=d78aeaf6-1747-4d72-9619-f16efb4dd89d" target="_blank" style="color: white;">Official Tax-Free Childcare Page</a></p>
+    </footer>
+</body>
+</html>
