@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign In to Your Childcare Account UK</title>
+    <style>
+        /* General Styles */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f9fa;
+            color: #333;
+        }
+
+        /* Header */
+        header {
+            background-color: #005ea5;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: 2rem;
+            margin: 0;
+        }
+
+        /* Main Content */
+        main {
+            padding: 20px;
+        }
+
+        main h2 {
+            color: #005ea5;
+        }
+
+        main p {
+            line-height: 1.6;
+        }
+
+        /* Link Styling */
+        a {
+            color: #005ea5;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        /* Steps Section */
+        .steps {
+            background-color: white;
+            padding: 15px;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+        }
+
+        .steps ol {
+            padding-left: 20px;
+        }
+
+        .steps li {
+            margin-bottom: 10px;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #005ea5;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <h1>Sign In to Your Childcare Account</h1>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <h2>About Your Childcare Account</h2>
+        <p>The UK government offers a <a href="https://www.gov.uk/sign-in-childcare-account?step-by-step-nav=d78aeaf6-1747-4d72-9619-f16efb4dd89d" target="_blank">childcare account</a> to help parents and guardians manage benefits such as Tax-Free Childcare and 30 hours of free childcare. This guide explains how to sign in and navigate your account effectively.</p>
+
+        <h2>Steps to Sign In</h2>
+        <div class="steps">
+            <ol>
+                <li>Visit the <a href="https://www.gov.uk/sign-in-childcare-account?step-by-step-nav=d78aeaf6-1747-4d72-9619-f16efb4dd89d" target="_blank">official GOV.UK childcare account page</a>.</li>
+                <li>Click on the "Sign in" button located prominently on the page.</li>
+                <li>Enter your Government Gateway user ID and password. If you don't have one, you can create an account during the process.</li>
+                <li>Follow the on-screen instructions to verify your identity if signing in for the first time.</li>
+                <li>Access your childcare account dashboard to manage payments, check eligibility, and apply for benefits.</li>
+            </ol>
+        </div>
+
+        <h2>Troubleshooting Common Issues</h2>
+        <p>If you face challenges signing in, here are some tips:</p>
+        <ul>
+            <li><strong>Forgotten Password:</strong> Use the "Forgot your password?" link on the sign-in page to reset your password.</li>
+            <li><strong>Account Lockout:</strong> If your account is locked after multiple failed attempts, wait for 24 hours or contact HMRC support.</li>
+            <li><strong>Technical Issues:</strong> Ensure your browser is updated and try clearing your cache or cookies.</li>
+        </ul>
+
+        <h2>Need Help?</h2>
+        <p>For further assistance, visit the <a href="https://www.gov.uk/help" target="_blank">GOV.UK Help Centre</a> or contact HMRC support for technical and account-related queries.</p>
+    </main>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2024 Childcare Support UK. All Rights Reserved. | <a href="https://www.gov.uk/sign-in-childcare-account?step-by-step-nav=d78aeaf6-1747-4d72-9619-f16efb4dd89d" target="_blank" style="color: white;">Official Link</a></p>
+    </footer>
+</body>
+</html>
