@@ -18,25 +18,50 @@
 </head>
 <body>
   <!-- Header -->
-  <header>
-  <h1>Tax-Free Childcare</h1>
-  <span class="menu-icon" onclick="toggleMenu()">☰</span>
-    <script>
-  function toggleMenu() {
-    const menu = document.getElementById('menu');
-    menu.classList.toggle('active');
-  }
-</script>
+  <header style="display: flex; justify-content: space-between; align-items: center; padding: 10px 20px; background-color: #333; color: white;">
+  <h1 style="font-size: 1.5rem; margin: 0;">Tax-Free Childcare</h1>
+  <span class="menu-icon" onclick="toggleMenu()" style="font-size: 1.5rem; cursor: pointer; display: none;">☰</span>
   <nav>
-    <ul id="menu">
-      <li><a href="#home">Home</a></li>
-      <li><a href="#calculator">Calculator</a></li>
-      <li><a href="#apply">Apply Now</a></li>
-      <li><a href="about-us.html">About Us</a></li>
-      <li><a href="blog">Blog</a></li>
+    <ul id="menu" style="list-style: none; display: flex; gap: 15px; margin: 0; padding: 0;">
+      <li><a href="#home" style="color: white; text-decoration: none; padding: 5px 10px;">Home</a></li>
+      <li><a href="#calculator" style="color: white; text-decoration: none; padding: 5px 10px;">Calculator</a></li>
+      <li><a href="#apply" style="color: white; text-decoration: none; padding: 5px 10px;">Apply Now</a></li>
+      <li><a href="about-us.html" style="color: white; text-decoration: none; padding: 5px 10px;">About Us</a></li>
+      <li><a href="blog" style="color: white; text-decoration: none; padding: 5px 10px;">Blog</a></li>
     </ul>
   </nav>
 </header>
+
+<script>
+  // Function to toggle the dropdown menu
+  function toggleMenu() {
+    const menu = document.getElementById('menu');
+    if (menu.style.display === 'flex') {
+      menu.style.display = 'none';
+    } else {
+      menu.style.display = 'flex';
+    }
+  }
+
+  // Adjust visibility for mobile view
+  function adjustMenu() {
+    const menu = document.getElementById('menu');
+    const menuIcon = document.querySelector('.menu-icon');
+    if (window.innerWidth <= 768) {
+      menu.style.display = 'none'; // Hide menu initially
+      menuIcon.style.display = 'block'; // Show the menu icon
+    } else {
+      menu.style.display = 'flex'; // Show menu for desktop
+      menuIcon.style.display = 'none'; // Hide the menu icon
+    }
+  }
+
+  // Run adjustMenu on window resize
+  window.addEventListener('resize', adjustMenu);
+  // Initial call to set up menu on page load
+  window.addEventListener('load', adjustMenu);
+</script>
+
   
   <!-- Calculator Section -->
   <section id="calculator">
