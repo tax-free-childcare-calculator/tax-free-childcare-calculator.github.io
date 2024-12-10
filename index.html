@@ -19,18 +19,24 @@
 <body>
   <!-- Header -->
   <header>
-    <h1>Tax-Free Childcare</h1>
-    <span class="menu-icon" onclick="toggleMenu()">☰</span>
-    <nav>
-      <ul>
-        <li><a href="#home">Home</a></li>
-        <li><a href="#calculator">Calculator</a></li>
-        <li><a href="#apply">Apply Now</a></li>
-        <li><a href="about-us.html">About Us</a></li>
-        <li><a href="blog">Blog</a></li>
-      </ul>
-    </nav>
-  </header>
+  <h1>Tax-Free Childcare</h1>
+  <span class="menu-icon" onclick="toggleMenu()">☰</span>
+    <script>
+  function toggleMenu() {
+    const menu = document.getElementById('menu');
+    menu.classList.toggle('active');
+  }
+</script>
+  <nav>
+    <ul id="menu">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#calculator">Calculator</a></li>
+      <li><a href="#apply">Apply Now</a></li>
+      <li><a href="about-us.html">About Us</a></li>
+      <li><a href="blog">Blog</a></li>
+    </ul>
+  </nav>
+</header>
   
   <!-- Calculator Section -->
   <section id="calculator">
