@@ -4,7 +4,9 @@ function calculate() {
 
   // Validate input
   if (isNaN(totalAmount) || totalAmount <= 0) {
-    alert("Please enter a valid total amount.");
+    document.getElementById("govContribution").value = "";
+    document.getElementById("amountToPay").value = "";
+    document.getElementById("govAddedAmount").value = "";
     return;
   }
 
@@ -18,3 +20,6 @@ function calculate() {
   document.getElementById("amountToPay").value = amountToPay.toFixed(2);
   document.getElementById("govAddedAmount").value = govAddedAmount.toFixed(2);
 }
+
+// Add an event listener to trigger calculation on input
+document.getElementById("totalAmount").addEventListener("input", calculate);
