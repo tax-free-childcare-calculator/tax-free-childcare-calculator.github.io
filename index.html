@@ -22,7 +22,7 @@
   <h1 style="font-size: 1.5rem; margin: 0;">Tax-Free Childcare</h1>
   <span class="menu-icon" onclick="toggleMenu()" style="font-size: 1.5rem; cursor: pointer; display: none;">☰</span>
   <nav>
-    <ul id="menu" style="list-style: none; display: flex; gap: 15px; margin: 0; padding: 0;">
+    <ul id="menu" style="list-style: none; display: flex; gap: 15px; margin: 0; padding: 0; transition: max-height 0.3s ease; overflow: hidden;">
       <li><a href="#home" style="color: white; text-decoration: none; padding: 5px 10px;">Home</a></li>
       <li><a href="#calculator" style="color: white; text-decoration: none; padding: 5px 10px;">Calculator</a></li>
       <li><a href="#apply" style="color: white; text-decoration: none; padding: 5px 10px;">Apply Now</a></li>
@@ -36,10 +36,12 @@
   // Function to toggle the dropdown menu
   function toggleMenu() {
     const menu = document.getElementById('menu');
-    if (menu.style.display === 'flex') {
-      menu.style.display = 'none';
+    const isHidden = menu.style.display === 'none' || menu.style.maxHeight === '0px';
+    
+    if (isHidden) {
+      menu.style.maxHeight = '300px'; // Adjust based on the number of menu items
     } else {
-      menu.style.display = 'flex';
+      menu.style.maxHeight = '0px';
     }
   }
 
@@ -48,10 +50,12 @@
     const menu = document.getElementById('menu');
     const menuIcon = document.querySelector('.menu-icon');
     if (window.innerWidth <= 768) {
-      menu.style.display = 'none'; // Hide menu initially
+      menu.style.display = 'block'; // Always render the menu container
+      menu.style.maxHeight = '0px'; // Hide menu items initially
       menuIcon.style.display = 'block'; // Show the menu icon
     } else {
       menu.style.display = 'flex'; // Show menu for desktop
+      menu.style.maxHeight = 'none'; // Remove height restriction
       menuIcon.style.display = 'none'; // Hide the menu icon
     }
   }
@@ -61,6 +65,29 @@
   // Initial call to set up menu on page load
   window.addEventListener('load', adjustMenu);
 </script>
+
+<style>
+  /* Mobile view styles */
+  #menu {
+    flex-direction: column;
+    align-items: start;
+    max-height: 0; /* Hidden initially */
+    overflow: hidden;
+    background-color: #333; /* Match the header background */
+    padding: 10px;
+  }
+
+  #menu li {
+    width: 100%; /* Take full width of the menu */
+  }
+
+  #menu li a {
+    display: block; /* Make the links fill their container */
+    width: 100%;
+    padding: 10px;
+  }
+</style>
+
 
   
   <!-- Calculator Section -->
