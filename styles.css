@@ -105,7 +105,15 @@ section p {
 .calculator button:hover {
   background-color: #004d40;
 }
-
+ article {
+      margin-bottom: 20px;
+      padding: 15px;
+      border: 1px solid #ddd;
+      border-radius: 5px;
+    }
+    article h2 {
+      margin-top: 0;
+    }
 /* Footer */
 footer {
   text-align: center;
